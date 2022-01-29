@@ -41,6 +41,7 @@
 a,
 a:hover {
   color: #f4f4f4;
+  text-decoration: none;
 }
 
 .background {
@@ -66,7 +67,7 @@ a:hover {
 
 .flip-card-inner {
   height: 100%;
-  padding-bottom: 65.928777671%;
+  padding-bottom: 66.02%;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s;
@@ -91,6 +92,10 @@ a:hover {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.footer {
+  font-size: 0.75rem;
 }
 
 .line {
