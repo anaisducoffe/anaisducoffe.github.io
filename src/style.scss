@@ -1,42 +1,5 @@
-:root {
-  --ad-gutter-x: 1rem;
-  --bs-body-bg: #f4f4f4;
-  --bs-body-color: #f4f4f4;
-  --bs-body-font-size: 1rem;
-  --bs-body-line-height: 1.5;
-  --bs-font-sans-serif: Montserrat, sans-serif;
-  --bs-gutter-x: 0;
-}
-
-@media (min-width: 576px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 540px) / 2);
-  }
-}
-
-@media (min-width: 768px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 720px) / 2);
-  }
-}
-
-@media (min-width: 992px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 960px) / 2);
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 1140px) / 2);
-  }
-}
-
-@media (min-width: 1400px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 1320px) / 2);
-  }
-}
+@import "custom";
+@import "bootstrap";
 
 a,
 a:hover {
