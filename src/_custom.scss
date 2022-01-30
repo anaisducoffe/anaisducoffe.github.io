@@ -1,39 +1,16 @@
-$body-bg: #f4f4f4;
-$body-color: #f4f4f4;
-$body-font-size: 1rem;
-$body-line-height: 1.5;
-$font-sans-serif: Montserrat, sans-serif;
+$ad-color-background: #c09a6d;
+$ad-color-disabled: #907d76;
+$ad-color-foreground: #f4f4f4;
+$ad-color-veil: #695b3e;
 
-:root {
-  --ad-gutter-x: 1rem;
-}
-
-@media (min-width: 576px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 540px) / 2);
-  }
-}
-
-@media (min-width: 768px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 720px) / 2);
-  }
-}
-
-@media (min-width: 992px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 960px) / 2);
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 1140px) / 2);
-  }
-}
-
-@media (min-width: 1400px) {
-  :root {
-    --ad-gutter-x: calc((100vw - 1320px) / 2);
-  }
-}
+$body-bg: $ad-color-foreground;
+$body-color: $ad-color-foreground;
+$font-family-base: Montserrat, sans-serif;
+$link-color: $ad-color-foreground;
+$link-decoration: none;
+$theme-colors: (
+  "background": $ad-color-background,
+  "disabled": $ad-color-disabled,
+  "foreground": $ad-color-foreground,
+  "veil": $ad-color-veil,
+);

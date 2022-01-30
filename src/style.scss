@@ -1,14 +1,23 @@
 @import "custom";
 @import "bootstrap";
 
-a,
-a:hover {
-  color: #f4f4f4;
-  text-decoration: none;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $container-max-width: map-get($container-max-widths, $breakpoint);
+    $ad-gutter-x: 1rem;
+
+    @if $container-max-width != null {
+      $ad-gutter-x: calc((100vw - $container-max-width) / 2);
+    }
+
+    :root {
+      --ad-gutter-x: #{$ad-gutter-x};
+    }
+  }
 }
 
 .background {
-  background-color: #d8b990;
+  background-color: $ad-color-background;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -47,7 +56,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 2rem;
-  border: 0.5rem solid #f4f4f4;
+  border: 0.5rem solid $ad-color-foreground;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -61,13 +70,25 @@ a:hover {
   font-size: 0.75rem;
 }
 
+.icon {
+  fill: $link-color;
+  height: 32px;
+  width: 32px;
+
+  &:hover {
+    fill: $link-hover-color;
+  }
+}
+
 .line {
-  background-color: #f4f4f4;
+  background-color: $ad-color-foreground;
   height: 1px;
 }
 
 .logo {
-  max-width: 256px;
+  fill: $ad-color-foreground;
+  height: 256px;
+  width: 256px;
 }
 
 .over-veil {
@@ -76,7 +97,7 @@ a:hover {
 }
 
 .veil {
-  background-color: #685a39;
+  background-color: $ad-color-veil;
   bottom: 0;
   left: var(--ad-gutter-x);
   opacity: 0.5;

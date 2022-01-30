@@ -1,6 +1,7 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -26,6 +27,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
+    }),
+    new HtmlWebpackInlineSVGPlugin({
+      runPreEmit: true,
     }),
   ],
   output: {
