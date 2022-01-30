@@ -1,0 +1,14 @@
+{
+  "description": "Décoration d'intérieur et Visualisation 3D",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "name": "Anaïs Ducoffe Interior Design",
+  "short_name": "AD Interior Design",
+  "theme_color": "#957b55"
+}
