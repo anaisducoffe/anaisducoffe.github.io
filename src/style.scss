@@ -22,7 +22,7 @@
 
 .icon-instagram {
   fill: $link-color;
-  height: 40px;
+  max-height: 40px;
   width: 40px;
 
   &:hover {
@@ -32,17 +32,22 @@
 
 .icon-quote {
   fill: $body-bg;
-  height: 40px;
+  max-height: 40px;
   width: 40px;
 }
 
-.img-logo {
+.icon-logo {
   fill: $body-color;
-  height: 192px;
+  max-height: 192px;
   width: 192px;
 
   @include media-breakpoint-up(sm) {
-    height: 256px;
+    max-height: 256px;
     width: 256px;
   }
+}
+
+.img-carousel {
+  max-height: 720px;
+  width: 1280px;
 }
