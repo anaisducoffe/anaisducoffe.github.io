@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-100" lang="fr">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8" />
@@ -11,56 +11,205 @@
   <title>Anaïs Ducoffe Interior Design</title>
 </head>
 
-<body class="h-100">
-  <div class="background shadow"></div>
-  <div class="d-flex flex-column h-100">
-    <div class="flex-fill">
-      <div class="contained over-veil px-3 text-center">
-        <img class="img-fluid logo" inline src="src/icons/logo.svg" />
+<body>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col col-lg-4 d-flex flex-column justify-content-center my-2 p-4">
+        <div class="text-center">
+          <img class="img-fluid img-logo" inline src="src/icons/logo.svg" />
+        </div>
+        <div class="fs-5 fw-bolder mb-2">Conseillère en décoration d'intérieur</div>
+        <div>J'ai travaillé pendant 10 ans dans le monde du développement logiciel. Aujourd'hui j'ai décidé de faire
+          d'une passion, qui m'anime depuis toujours, mon métier. J'ai donc suivi une formation en décoration et
+          architecture d'intérieur à l'école française du bâtiment à Nice, pour m'établir en tant que décoratrice
+          d'intérieur à Antibes.</div>
       </div>
-      <div class="contained fs-5 over-veil px-3 text-center">
-        Bonjour, je m’appelle Anaïs Ducoffe, décoratrice d’intérieur, que puis-je faire pour vous ?
-      </div>
-      <div class="align-items-center contained d-flex my-3 over-veil">
-        <div class="flex-fill line"></div>
-        <a aria-label="Téléphonez-moi" class="mx-2" href="tel:+33765636875">
-          <img class="icon" inline src="src/icons/phone.svg" />
-        </a>
-        <a aria-label="Écrivez-moi" class="mx-2" href="mailto:contact@ad-interior-design.fr">
-          <img class="icon" inline src="src/icons/envelope.svg" />
-        </a>
-        <a aria-label="Suivez-moi sur Instagram" class="mx-2" href="https://www.instagram.com/aducoffe/" rel="noopener"
-          target="_blank">
-          <img class="icon" inline src="src/icons/instagram.svg" />
-        </a>
-      </div>
-      <div class="contained over-veil px-3">
-        <div id="flip-card" class="flip-card mx-auto">
-          <div class="flip-card-inner">
-            <img alt="Carte de visite - recto" class="flip-card-front" src="images/business-card-recto.webp" />
-            <img alt="Carte de visite - verso" class="flip-card-back" src="images/business-card-verso.webp" />
+      <div class="card col col-lg-8 my-2 shadow-sm">
+        <div class="card-header carousel slide" data-bs-ride="carousel" id="carousel-1">
+          <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Image 1" class="active" data-bs-target="#carousel-1"
+              data-bs-slide-to="0" type="button"></button>
+            <button aria-label="Image 2" data-bs-target="#carousel-1" data-bs-slide-to="1" type="button"></button>
+            <button aria-label="Image 3" data-bs-target="#carousel-1" data-bs-slide-to="2" type="button"></button>
+            <button aria-label="Image 4" data-bs-target="#carousel-1" data-bs-slide-to="3" type="button"></button>
+            <button aria-label="Image 5" data-bs-target="#carousel-1" data-bs-slide-to="4" type="button"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="" class="d-block w-100" src="carousel-1/image-1.webp">
+              <div class="carousel-caption">
+                <div>Projet Grasse</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img alt="" class="d-block w-100" src="carousel-1/image-2.webp">
+              <div class="carousel-caption">
+                <div>Projet Grasse</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img alt="" class="d-block w-100" src="carousel-1/image-3.webp">
+              <div class="carousel-caption">
+                <div>Projet Grasse</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img alt="" class="d-block w-100" src="carousel-1/image-4.webp">
+              <div class="carousel-caption">
+                <div>Projet Grasse</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img alt="" class="d-block w-100" src="carousel-1/image-5.webp">
+              <div class="carousel-caption">
+                <div>Projet Mouans-Sartoux</div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-1" type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Précédente</span>
+          </button>
+          <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-1" type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Suivante</span>
+          </button>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col col-lg-7 p-4">
+            <div class="fs-4 fw-bolder mb-3 text-uppercase">Contactez-moi</div>
+            <div class="mb-3">Conseils en décoration d'intérieur<br />Visualisation 3D<br />Alpes-Maritimes et Var</div>
+            <div class="mb-3">Chez Pôle Immobilier<br />540 1ère Avenue<br />06600 Antibes</div>
+            <div>
+              <a href="tel:+33765636875">(+33) 07 65 63 68 75</a><br />
+              <a href="mailto:contact@ad-interior-design.fr">contact@ad-interior-design.fr</a>
+            </div>
+          </div>
+          <div class="col col-lg-5 p-4">
+            <div class="fs-5 fw-bolder mb-3">Suivez-moi sur Instagram !</div>
+            <div>
+              <a href="https://instagram.com/aducoffe" target="_blank" rel="noopener">
+                <img class="float-start icon-instagram me-2" inline src="src/icons/instagram.svg" />
+              </a>
+              C'est là que vous retrouverez toutes mes réalisations, mon actualité et mes inspirations.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="contained footer mt-5 over-veil pb-2 px-3 text-center">
-      <div>
-        <span class="text-nowrap">Anaïs Ducoffe Interior Design,</span>
-        <span class="text-nowrap">540 1ère Avenue, 06600 Antibes</span>
+      <div class="col col-lg-4 d-flex flex-column justify-content-center my-2 p-4">
+        <div class="fs-5 fw-bolder mb-2">Étude décorative</div>
+        <div>La mission d'étude décorative s'adresse aux particuliers. C'est une proposition complète qui
+          vous fournira une solution d'aménagement et de décoration personnalisée pour tout ou partie de votre logement.
+        </div>
+        <ul class="my-4">
+          <li class="mb-2">Analyse de vos attentes et besoins. Visite à domicile 2h.</li>
+          <li class="mb-2">Établissement d'un cahier des charges, de planches d'ambiance, plans d'implantation et
+            devis fixant les honoraires pour l'étude.</li>
+          <li>Si validation d'une proposition et signature du devis : création d'un dossier complet
+            d'aménagement et de décoration qui présente la solution définitive au client, les listes shopping et
+            déco, ainsi qu'une estimation du prix des travaux.</li>
+        </ul>
+        <div>Prix sur devis en fonction de la complexité du projet. À titre indicatif, mon forfait horaire est de 60
+          euros.</div>
       </div>
-      <div>
-        <a class="text-nowrap" href="tel:+33765636875">
-          (+33) 07 65 63 68 75
-        </a>
-        -
-        <a class="text-nowrap" href="mailto:contact@ad-interior-design.fr">
-          contact@ad-interior-design.fr
-        </a>
+      <div class="card col col-lg-8 my-2 shadow-sm">
+        <div class="card-header carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="" class="d-block w-100" src="carousel-2/image-1.webp">
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col col-lg-8 p-4">
+            <div class="fs-4 fw-bolder mb-2 text-uppercase">Particuliers,</div>
+            <div class="mb-4">
+              J'ai toujours été attirée par l'architecture et le design d'intérieur. Mais le moment où
+              j'ai décidé d'exercer le métier de décoratrice, remonte à mon séjour en Finlande où j'ai rencontré le
+              <span class="fst-italic fw-bolder">design finlandais</span>. Un design qui met le fonctionnel et
+              l'esthétique au même niveau. Un design conçu pour durer et aider les gens. Je crois fortement en cette
+              idée qu'un logement adapté permet de créer du bien être au quotidien. Je prône également l'idée d'une
+              démocratisation du design : se sentir bien chez soi est l'affaire de tous !
+            </div>
+            <div class="fs-5 fw-bolder mb-2">Un lieu de vie adapté à la vôtre</div>
+            <div>Faire appel à un décorateur, c'est vous permettre de trouver des solutions d'aménagement esthétiques,
+              fonctionnelles et adaptées à vos besoins. Le tout, en optimisant votre budget.</div>
+          </div>
+          <div class="col col-lg-4 d-flex flex-column justify-content-end p-4">
+            <div class="fw-bolder lh-sm mb-1">
+              <img class="float-start icon-quote" inline src="src/icons/quote.svg" />
+              Si le soleil entre dans la maison, il est un peu dans votre cœur.
+            </div>
+            <div class="fw-bolder text-end">Le Corbusier</div>
+          </div>
+        </div>
       </div>
-      <div class="text-nowrap">Siret : 909 237 828 00019</div>
+      <div class="col col-lg-4 d-flex flex-column justify-content-center my-2 p-4">
+        <div class="fs-5 fw-bolder mb-2">Visualisation 3D</div>
+        <div>La Visualisation 3D est un service proposé aux professionnels de l'immobilier : agences
+          immobilières, promoteurs, décorateurs… Il permet d'aider un particulier à se projeter dans son futur
+          intérieur. Il peut également aider un acheteur à visualiser le potentiel d'un bien immobilier et ainsi
+          favoriser une vente.</div>
+        <ul class="my-4">
+          <li class="mb-2">Analyse de vos besoins et attentes. Entretien 1h.</li>
+          <li class="mb-2">Récupération d'un plan 2D avec cotes. La prise de mesures d'un logement sera en supplément.
+          </li>
+          <li class="mb-2">Établissement d'un cahier des charges, de planches d'ambiance, plans d'implantation et
+            devis fixant les honoraires pour la mission.</li>
+          <li>Si validation de la proposition et signature du devis : création des visuels 3D (plans ou
+            images photoréalistes Full HD). Estimation du prix de réalisation sur demande.</li>
+        </ul>
+        <div>Prix sur devis en fonction de la complexité du projet. À titre indicatif, mon forfait horaire est de 60
+          euros.</div>
+      </div>
+      <div class="card col col-lg-8 my-2 shadow-sm">
+        <div class="card-header carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="" class="d-block w-100" src="carousel-3/image-1.webp">
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col col-lg-8 p-4">
+            <div class="fs-4 fw-bolder mb-2 text-uppercase">Professionnels,</div>
+            <div class="mb-4">Il est parfois difficile pour certains clients de se projeter dans un bien. Encore plus
+              lorsque ce dernier n'est pas encore terminé ou nécessite des travaux. Vous pouvez les aider à apprécier le
+              potentiel de votre bien, ou projet, grâce à des visuels 3D.</div>
+            <div class="fs-5 fw-bolder mb-2">Illustrons votre paradis terrestre !</div>
+            <div>Un dessin vaut toujours mieux qu'un long discours. Je vous aiderai à illustrer vos projets de
+              façon réaliste et attractif. Vos clients auront déjà l'impression d'être chez eux.</div>
+          </div>
+          <div class="col col-lg-4 d-flex flex-column justify-content-end p-4">
+            <div class="fw-bolder lh-sm mb-1">
+              <img class="float-start icon-quote" inline src="src/icons/quote.svg" />
+              Le but ultime de l'architecte… est de créer un paradis. Chaque maison, chaque produit d'architecture…
+              devrait être un fruit de nos efforts pour construire un paradis terrestre pour tous.
+            </div>
+            <div class="fw-bolder text-end">Alvar Aalto</div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-12 mb-1 mt-5 text-center text-muted">
+        <div>
+          <span class="text-nowrap">Anaïs Ducoffe Interior Design,</span>
+          <span class="text-nowrap">Chez Pôle Immobilier,</span>
+          <span class="text-nowrap">540 1ère Avenue,</span>
+          <span class="text-nowrap">06600 Antibes</span>
+        </div>
+        <div>
+          <a class="text-nowrap text-reset" href="tel:+33765636875">
+            (+33) 07 65 63 68 75
+          </a>
+          -
+          <a class="text-nowrap text-reset" href="mailto:contact@ad-interior-design.fr">
+            contact@ad-interior-design.fr
+          </a>
+        </div>
+        <div class="text-nowrap">Siret : 909 237 828 00019</div>
+      </div>
     </div>
   </div>
-  <div class="shadow veil"></div>
 </body>
 
 </html>

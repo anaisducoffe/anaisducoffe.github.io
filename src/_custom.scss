@@ -1,16 +1,5 @@
-$ad-color-background: #c09a6d;
-$ad-color-disabled: #907d76;
-$ad-color-foreground: #f4f4f4;
-$ad-color-veil: #695b3e;
-
-$body-bg: $ad-color-foreground;
-$body-color: $ad-color-foreground;
+$body-bg: #ECF8F6;
+$enable-negative-margins: true;
 $font-family-base: Montserrat, sans-serif;
-$link-color: $ad-color-foreground;
+$link-color: #D3B498;
 $link-decoration: none;
-$theme-colors: (
-  "background": $ad-color-background,
-  "disabled": $ad-color-disabled,
-  "foreground": $ad-color-foreground,
-  "veil": $ad-color-veil,
-);

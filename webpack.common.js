@@ -8,6 +8,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(html)$/i,
+        loader: "html-loader",
+        options: {
+          sources: {
+            urlFilter: (_, value) => !/\.(svg)$/.test(value),
+          },
+        },
+      },
+      {
         test: /\.(css)$/i,
         use: ["style-loader", "css-loader"],
       },

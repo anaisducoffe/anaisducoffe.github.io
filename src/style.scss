@@ -1,107 +1,48 @@
 @import "custom";
 @import "bootstrap";
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $container-max-width: map-get($container-max-widths, $breakpoint);
-    $ad-gutter-x: 1rem;
+.card {
+  background-color: #18534F;
+  color: $body-bg;
 
-    @if $container-max-width != null {
-      $ad-gutter-x: calc((100vw - $container-max-width) / 2);
-    }
-
-    :root {
-      --ad-gutter-x: #{$ad-gutter-x};
-    }
+  @include media-breakpoint-up(sm) {
+    border-radius: 1rem;
+    overflow: hidden;
   }
 }
 
-.background {
-  background-color: $ad-color-background;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: var(--ad-gutter-x);
-  top: 0;
-  z-index: -100;
+.card-header {
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
 
-.contained {
-  margin-left: var(--ad-gutter-x);
-  margin-right: var(--ad-gutter-x);
+.carousel-caption {
+  text-shadow: 0 0.125rem 0.25rem #000 !important;
 }
 
-.flip-card {
-  max-width: 512px;
-  perspective: 1000px;
-  user-select: none;
-}
-
-.flip-card-inner {
-  height: 100%;
-  padding-bottom: 66.02%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-  width: 100%;
-}
-
-.flip-card:active .flip-card-inner,
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-back,
-.flip-card-front {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 2rem;
-  border: 0.5rem solid $ad-color-foreground;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
-.footer {
-  font-size: 0.75rem;
-}
-
-.icon {
+.icon-instagram {
   fill: $link-color;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 
   &:hover {
     fill: $link-hover-color;
   }
 }
 
-.line {
-  background-color: $ad-color-foreground;
-  height: 1px;
+.icon-quote {
+  fill: $body-bg;
+  height: 40px;
+  width: 40px;
 }
 
-.logo {
-  fill: $ad-color-foreground;
-  height: 256px;
-  width: 256px;
-}
+.img-logo {
+  fill: $body-color;
+  height: 192px;
+  width: 192px;
 
-.over-veil {
-  position: relative;
-  z-index: 100;
-}
-
-.veil {
-  background-color: $ad-color-veil;
-  bottom: 0;
-  left: var(--ad-gutter-x);
-  opacity: 0.5;
-  position: fixed;
-  right: 0;
-  top: 0;
+  @include media-breakpoint-up(sm) {
+    height: 256px;
+    width: 256px;
+  }
 }
