@@ -4,6 +4,7 @@
 .card {
   background-color: #18534F;
   color: $body-bg;
+  fill: $body-bg;
 
   @include media-breakpoint-up(sm) {
     border-radius: 1rem;
@@ -20,34 +21,19 @@
   text-shadow: 0 0.125rem 0.25rem #000 !important;
 }
 
-.icon-instagram {
+.link-icon {
   fill: $link-color;
-  max-height: 40px;
-  width: 40px;
 
   &:hover {
     fill: $link-hover-color;
   }
 }
 
-.icon-quote {
-  fill: $body-bg;
-  max-height: 40px;
-  width: 40px;
-}
-
 .icon-logo {
   fill: $body-color;
-  max-height: 192px;
-  width: 192px;
 
   @include media-breakpoint-up(sm) {
-    max-height: 256px;
+    height: 256px;
     width: 256px;
   }
-}
-
-.img-carousel {
-  max-height: 720px;
-  width: 1280px;
 }
