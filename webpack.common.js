@@ -3,13 +3,14 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   module: {
     rules: [
       {
-        test: /\.(html)$/i,
+        test: /\.html$/i,
         loader: "html-loader",
         options: {
           sources: {
@@ -18,17 +19,8 @@ module.exports = {
         },
       },
       {
-        test: /\.(css)$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.(scss)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -46,8 +38,14 @@ module.exports = {
     new HtmlWebpackInlineSVGPlugin({
       runPreEmit: true,
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      chunkFilename: "[id].[contenthash].css",
+      filename: "[name].[contenthash].css",
+    }),
   ],
+  optimization: {
+    minimizer: ["...", new CssMinimizerPlugin()],
+  },
   output: {
     clean: true,
     filename: "[name].[contenthash].js",
